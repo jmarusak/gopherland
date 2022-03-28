@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"example.com/geometry"
+	"example.com/tempconv"
 )
 
 func main() {
-	p := geometry.Point{2, 3}
-	
-	fmt.Printf("%v\n", p)
+	var flag tempconv.CelsiusFlag
+	flag.Set("212F")
+	fmt.Println(flag)
 }
